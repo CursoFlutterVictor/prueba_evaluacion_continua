@@ -55,6 +55,8 @@ void ejercicio_1() {
   stdout.writeln("${Meses.values.elementAt(mes - 1).name} tiene $diasMes dias");
 
   // Pedimos la cantidad de dias que ha faltado.
+  // Aqui haria un do-while mirando que el nº de faltas este entre 0 y diasMes
+  // pero no me da tiempo!!!
   stdout.writeln("Introduzca el numero de faltas de asistencia:");
   int? faltas = int.tryParse(stdin.readLineSync() ?? '0') ?? 0;
 
